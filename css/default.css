@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after{
+    box-sizing: border-box;
+}
+*::before{
+    box-sizing: border-box;
+}
+.token.selector{
+    color: black;
+}
+.token.property{
+    color: black;
+}
+.token.function{
+    color: black;
+}
+body{
+    display: flex;
+    flex-direction:column;
+    height: 100vh;
+}
+.code-wrapper{
+    flex: 1;
+    height: 50%;
+}
+.preview-wrapper{
+    flex: 1;
+    height: 50%;
+}
+#code{
+    overflow: hidden;
+    height: 100%;
+}
+.actions{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.actions>button{
+    margin: 8px;
+    background: #ddd;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.5s;
+}
+.actions>button:focus{
+    outline: none;
+}
+.actions>div{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ddd;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.actions>button.active{
+    color: #ddd;
+    background: rgb(30,30,30);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+}
